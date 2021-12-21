@@ -25,7 +25,7 @@ That will install all the needed packages
 #Coming soon
 
 ## Settings
-The config.yml file is created through the script automaitcally with no user input needed now. All changes are now made through the GUI YAY!
+The config.yml file is created through the script automatically with no user input needed now. All changes are now made through the GUI YAY!
 
 
 ## Usage
@@ -61,6 +61,7 @@ How to get token: https://support.plex.tv/articles/204059436-finding-an-authenti
 You can then setup a default pre-roll if you want or leave it blank
 
 To set specific pre-roll fuctions select which type you want (Monthly, Weekly, Daily, Holiday), You will then see more fields on the right
+#### *The path to the videos must be reachable by your Plex Server!*
 
 Monthly:
 ![image](https://user-images.githubusercontent.com/75536101/146992956-baa1dd72-57e0-4aa2-bbdf-8cf4e75cd4be.png)
