@@ -1,6 +1,11 @@
 # Plex-Automatic-Pre-roll-GUI
 This is the new and improved Plex Automatic Pre-roll script with a GUI! It should be stable but if you find a bug please let me know
 
+## What is this?
+This is a python script with GUI that allows you to automate your Plex Server Pre-roll.
+You can find out more about Plex Pre-roll here: https://support.plex.tv/articles/202920803-extras/
+You can specify if you would like your pre-roll updated monthly, weekly, daily, or for specific holidays.
+For example you can have this setup to apply a standard Pre-roll during regular times of the year and then during holidays update the pre-roll automatically!
 
 ## Requirements
 -[Python 3.7+](https://www.python.org/)
