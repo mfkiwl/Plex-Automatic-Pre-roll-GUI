@@ -146,6 +146,7 @@ while True:
         settings['Thanksgiving Enabled'] = values['Thanksgiving Enabled']
         settings['Christmas Enabled'] = values['Christmas Enabled']
         settings['Default'] = values['Default']
+        sg.popup('Your Changes are saved')
 
     if event == 'Submit':
         settings['URL'] = values['URL']
@@ -189,7 +190,10 @@ while True:
         settings['Halloween Enabled'] = values['Halloween Enabled']
         settings['Thanksgiving Enabled'] = values['Thanksgiving Enabled']
         settings['Christmas Enabled'] = values['Christmas Enabled']
+        settings['Default'] = values['Default']
         PrerollUpdate.update()
+        sg.popup('Your Pre-roll is updated!')
+
     if event == 'Freq':
         if values['Freq'] == ['Monthly']:
             window['Month'].update(visible=True)
