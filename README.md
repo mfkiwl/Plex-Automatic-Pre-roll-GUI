@@ -27,7 +27,8 @@ That will install all the needed packages
 
 ## Step by step instructions by Danny at smarthomepursuits.com
 
-#Coming soon
+https://smarthomepursuits.com/how-to-setup-plex-automatic-pre-roll-gui-in-windows/
+
 
 ## Settings
 The config.yml file is created through the script automatically with no user input needed now. All changes are now made through the GUI YAY!
