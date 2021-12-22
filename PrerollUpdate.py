@@ -28,12 +28,13 @@ def update():
 
     if data['Freq'][0] == 'Monthly':
         Date = datetime.date.today()
-        Date.strftime("%b")
+        Date = Date.strftime("%b")
         session = requests.Session()
         session.verify = False
         requests.packages.urllib3.disable_warnings()
         plex = PlexServer(data['URL'], data['Token'], session, timeout=None)
-        if data[Date] is none:
+        print(Date)
+        if data[Date] is None:
             Path = data['Default']
         else:
             Path = data[Date]
@@ -43,7 +44,7 @@ def update():
         print('Pre-roll updated')
     if data['Freq'][0] == 'Weekly':
         Date = datetime.date.today()
-        Date.strftime("%Y-%m-%d")
+        Date = Date.strftime("%Y-%m-%d")
         if data['WeekStart'] <= Date <= data['WeekEnd']:
             session = requests.Session()
             session.verify = False
@@ -64,12 +65,12 @@ def update():
             print('Pre-roll updated')
     if data['Freq'][0] == 'Daily':
         Date = datetime.date.today()
-        Date.strftime("%a")
+        Date = Date.strftime("%a")
         session = requests.Session()
         session.verify = False
         requests.packages.urllib3.disable_warnings()
         plex = PlexServer(data['URL'], data['Token'], session, timeout=None)
-        if data[Date] is none:
+        if data[Date] is None:
             Path = data['Default']
         else:
             Path = data[Date]
@@ -79,7 +80,6 @@ def update():
         print('Pre-roll updated')
     if data['Freq'][0] == 'Holiday':
         Date = datetime.date.today()
-        Date.strftime("%Y-%m-%d")
         ThanksgivingDay = 22 + (10 - datetime.date(Date.year, 11, 1).weekday()) % 7
         # Valentines Day
         if Date.strftime("%b%d") == 'Feb14' and data['Valentines Day Enabled']:
